@@ -6,12 +6,12 @@
 </div>
 {% endmacro %}
 
-<!--{% macro show_tracking_types(tracking_types) %}-->
-<!--<div class="columns is-multiline">-->
-<!--{% for tracking_type in tracking_types %}-->
-<!--    <div class="column is-half">-->
-<!--    {{ show_tracking_type(tracking_type) }}-->
-<!--    </div>-->
-<!--{% endfor %}-->
-<!--</div>-->
-<!--{% endmacro %}-->
+{% macro show_tracking_types(tracking_types) %}
+<div class="card-columns">
+{% for tracking_type in tracking_types %}
+    <div class="flex-column">
+    {{ show_tracking_type(tracking_type) }}
+    </div>
+{% endfor %}
+</div>
+{% endmacro %}
