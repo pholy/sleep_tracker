@@ -1,0 +1,20 @@
+{% from "_macros.html" import show_tracking_type with context %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/bootstrap.min.css") }}">
+    {#      <link rel="stylesheet" href={{ url_for("static", filename="css/app.css") }}>#}
+    {#    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">#}
+    <title>Sleep Tracker</title>
+</head>
+<body>
+<div class="container-fluid p-4">
+    {% block content %}
+    {% endblock %}
+</div>
+<script src="{{ url_for("static", filename="js/jquery-3.5.0.min.js") }}"></script>
+<script src="{{ url_for("static", filename="js/bootstrap.bundle.min.js") }}"></script>
+</body>
+</html>

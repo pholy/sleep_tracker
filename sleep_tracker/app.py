@@ -34,6 +34,7 @@ def close_connection(exception):
 
 
 @app.route("/")
+@app.route("/tracking_type")
 def home():
-    tracking_types = execute_sql("select tracker_type_code from tracker_type")
-    return render_template("index.html", tracking_types=tracking_types)
+    sleep_tracking_type = execute_sql("select tracker_type.tracker_type_code from tracker_type where tracker_type.tracker_type_id = 1")
+    return render_template("index.html", sleep_tracking_type=sleep_tracking_type)

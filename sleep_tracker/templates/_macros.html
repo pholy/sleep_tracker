@@ -1,0 +1,17 @@
+{% macro show_tracking_type(tracking_type) %}
+<div class="card p-1">
+    <p>
+        <a>{{ tracking_type["tracker_type_code"] }}</a><br>
+    </p>
+</div>
+{% endmacro %}
+
+<!--{% macro show_tracking_types(tracking_types) %}-->
+<!--<div class="columns is-multiline">-->
+<!--{% for tracking_type in tracking_types %}-->
+<!--    <div class="column is-half">-->
+<!--    {{ show_tracking_type(tracking_type) }}-->
+<!--    </div>-->
+<!--{% endfor %}-->
+<!--</div>-->
+<!--{% endmacro %}-->
