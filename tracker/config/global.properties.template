@@ -1,0 +1,12 @@
+
+G_HOME=${HOME}
+G_REPO_ROOT=${HOME}/dev/tracker
+
+G_SRC_ROOT=${HOME}/dev/tracker/tracker
+G_TEST_ROOT=${HOME}/dev/tracker/tracker/test
+
+G_PYTHON_EXE=${HOME}/.virtualenvs/tracker/bin/python
+G_PYTHONPATH=${HOME}/dev/tracker/tracker
+
+G_SYNC_DIR=${HOME}/sync
+G_DB_PATH=${HOME}/sync/tracker.db

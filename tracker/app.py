@@ -2,7 +2,7 @@ import sqlite3
 
 from flask import Flask, g, render_template
 
-DB_PATH = "/var/sync/tracker.db"
+from config import DB_PATH
 
 app = Flask(__name__)
 
